@@ -15,6 +15,16 @@
 		49E80B4120B3631200B3CE41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E80B3F20B3631200B3CE41 /* LaunchScreen.storyboard */; };
 		49E80B4C20B3631200B3CE41 /* EditWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E80B4B20B3631200B3CE41 /* EditWorldTests.swift */; };
 		49E80B5720B3631200B3CE41 /* EditWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E80B5620B3631200B3CE41 /* EditWorldUITests.swift */; };
+		49E80B6620B3639200B3CE41 /* DynamicGeometryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E80B6520B3639200B3CE41 /* DynamicGeometryNode.swift */; };
+		49E80B6C20B3642E00B3CE41 /* Group 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E80B6720B3642D00B3CE41 /* Group 1.png */; };
+		49E80B6D20B3642E00B3CE41 /* Group 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E80B6820B3642D00B3CE41 /* Group 3.png */; };
+		49E80B6E20B3642E00B3CE41 /* Group 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E80B6920B3642D00B3CE41 /* Group 2.png */; };
+		49E80B6F20B3642E00B3CE41 /* information.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E80B6A20B3642D00B3CE41 /* information.png */; };
+		49E80B7020B3642E00B3CE41 /* iPhone X – 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E80B6B20B3642D00B3CE41 /* iPhone X – 4.png */; };
+		49E80B7220B376CA00B3CE41 /* textNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E80B7120B376CA00B3CE41 /* textNode.swift */; };
+		49E80B7620B3772700B3CE41 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E80B7520B3772700B3CE41 /* Text.swift */; };
+		49E80B7820B3776E00B3CE41 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E80B7720B3776E00B3CE41 /* SettingsViewController.swift */; };
+		49E80B7A20B385AC00B3CE41 /* Ultilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E80B7920B385AC00B3CE41 /* Ultilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		49E80B5220B3631200B3CE41 /* EditWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EditWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E80B5620B3631200B3CE41 /* EditWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWorldUITests.swift; sourceTree = "<group>"; };
 		49E80B5820B3631200B3CE41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E80B6520B3639200B3CE41 /* DynamicGeometryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicGeometryNode.swift; sourceTree = "<group>"; };
+		49E80B6720B3642D00B3CE41 /* Group 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 1.png"; sourceTree = "<group>"; };
+		49E80B6820B3642D00B3CE41 /* Group 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 3.png"; sourceTree = "<group>"; };
+		49E80B6920B3642D00B3CE41 /* Group 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Group 2.png"; sourceTree = "<group>"; };
+		49E80B6A20B3642D00B3CE41 /* information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = information.png; sourceTree = "<group>"; };
+		49E80B6B20B3642D00B3CE41 /* iPhone X – 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone X – 4.png"; sourceTree = "<group>"; };
+		49E80B7120B376CA00B3CE41 /* textNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textNode.swift; sourceTree = "<group>"; };
+		49E80B7520B3772700B3CE41 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		49E80B7720B3776E00B3CE41 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		49E80B7920B385AC00B3CE41 /* Ultilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +119,7 @@
 		49E80B3320B3631100B3CE41 /* EditWorld */ = {
 			isa = PBXGroup;
 			children = (
+				49E80B6420B3635400B3CE41 /* Images */,
 				49E80B3420B3631100B3CE41 /* AppDelegate.swift */,
 				49E80B3620B3631100B3CE41 /* art.scnassets */,
 				49E80B3820B3631100B3CE41 /* ViewController.swift */,
@@ -106,6 +127,11 @@
 				49E80B3D20B3631200B3CE41 /* Assets.xcassets */,
 				49E80B3F20B3631200B3CE41 /* LaunchScreen.storyboard */,
 				49E80B4220B3631200B3CE41 /* Info.plist */,
+				49E80B6520B3639200B3CE41 /* DynamicGeometryNode.swift */,
+				49E80B7120B376CA00B3CE41 /* textNode.swift */,
+				49E80B7520B3772700B3CE41 /* Text.swift */,
+				49E80B7720B3776E00B3CE41 /* SettingsViewController.swift */,
+				49E80B7920B385AC00B3CE41 /* Ultilities.swift */,
 			);
 			path = EditWorld;
 			sourceTree = "<group>";
@@ -126,6 +152,18 @@
 				49E80B5820B3631200B3CE41 /* Info.plist */,
 			);
 			path = EditWorldUITests;
+			sourceTree = "<group>";
+		};
+		49E80B6420B3635400B3CE41 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				49E80B6720B3642D00B3CE41 /* Group 1.png */,
+				49E80B6920B3642D00B3CE41 /* Group 2.png */,
+				49E80B6820B3642D00B3CE41 /* Group 3.png */,
+				49E80B6A20B3642D00B3CE41 /* information.png */,
+				49E80B6B20B3642D00B3CE41 /* iPhone X – 4.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +270,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E80B6F20B3642E00B3CE41 /* information.png in Resources */,
+				49E80B6D20B3642E00B3CE41 /* Group 3.png in Resources */,
+				49E80B6C20B3642E00B3CE41 /* Group 1.png in Resources */,
 				49E80B3720B3631100B3CE41 /* art.scnassets in Resources */,
 				49E80B4120B3631200B3CE41 /* LaunchScreen.storyboard in Resources */,
+				49E80B6E20B3642E00B3CE41 /* Group 2.png in Resources */,
+				49E80B7020B3642E00B3CE41 /* iPhone X – 4.png in Resources */,
 				49E80B3E20B3631200B3CE41 /* Assets.xcassets in Resources */,
 				49E80B3C20B3631100B3CE41 /* Main.storyboard in Resources */,
 			);
@@ -260,8 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E80B7220B376CA00B3CE41 /* textNode.swift in Sources */,
+				49E80B7820B3776E00B3CE41 /* SettingsViewController.swift in Sources */,
 				49E80B3920B3631100B3CE41 /* ViewController.swift in Sources */,
 				49E80B3520B3631100B3CE41 /* AppDelegate.swift in Sources */,
+				49E80B7A20B385AC00B3CE41 /* Ultilities.swift in Sources */,
+				49E80B7620B3772700B3CE41 /* Text.swift in Sources */,
+				49E80B6620B3639200B3CE41 /* DynamicGeometryNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +485,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2L6YBBTA7;
 				INFOPLIST_FILE = EditWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +504,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2L6YBBTA7;
 				INFOPLIST_FILE = EditWorld/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
