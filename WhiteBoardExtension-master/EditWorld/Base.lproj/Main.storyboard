@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="EditWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </arscnView>
+                    <connections>
+                        <outlet property="colorSlider" destination="YOR-cN-zZY" id="Zgc-nx-aJ4"/>
+                        <outlet property="customizedView" destination="GLL-SA-lkO" id="72P-24-lzk"/>
+                        <outlet property="distanceLabel" destination="Lgk-av-PB5" id="7AZ-aH-d75"/>
+                        <outlet property="distanceSlider" destination="E78-gg-0IM" id="Vwf-Ij-5M9"/>
+                        <outlet property="fontLabel" destination="zPq-gD-Gd9" id="LPZ-qJ-OZs"/>
+                        <outlet property="fontSlider" destination="sv9-8w-6FV" id="S8C-YQ-5s6"/>
+                        <outlet property="inputBottomConstraint" destination="zne-kR-wEe" id="XKe-Yf-qaL"/>
+                        <outlet property="postText" destination="w5u-5Q-fjC" id="n7X-q8-ept"/>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="sendBottomConstraint" destination="2Cl-JS-PUb" id="NwQ-GT-LKh"/>
+                        <outlet property="textBox" destination="ptq-OT-gW2" id="3xz-4S-r5M"/>
+                        <outlet property="textInputView" destination="zhO-6X-HBE" id="w9o-Ju-Wc5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="zhO-6X-HBE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ptq-OT-gW2">
+                            <rect key="frame" x="0.0" y="336" width="300" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5u-5Q-fjC">
+                            <rect key="frame" x="314" y="333" width="37" height="33"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <state key="normal" title="Post"/>
+                            <connections>
+                                <action selector="tapPostText:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Qkr-Ug-nui"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="w5u-5Q-fjC" firstAttribute="bottom" secondItem="zhO-6X-HBE" secondAttribute="bottom" constant="-34" id="2Cl-JS-PUb"/>
+                        <constraint firstItem="eUy-Q1-dJz" firstAttribute="trailing" secondItem="w5u-5Q-fjC" secondAttribute="trailing" constant="24" id="CgX-Hh-nv5"/>
+                        <constraint firstItem="ptq-OT-gW2" firstAttribute="leading" secondItem="zhO-6X-HBE" secondAttribute="leading" id="NdN-UN-AfU"/>
+                        <constraint firstItem="eUy-Q1-dJz" firstAttribute="trailing" secondItem="ptq-OT-gW2" secondAttribute="trailingMargin" constant="90" id="qyb-1P-xx4"/>
+                        <constraint firstItem="ptq-OT-gW2" firstAttribute="bottom" secondItem="zhO-6X-HBE" secondAttribute="bottom" constant="34" id="zne-kR-wEe"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="eUy-Q1-dJz"/>
+                </view>
+                <view contentMode="scaleToFill" id="GLL-SA-lkO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customized" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJh-l6-caq">
+                            <rect key="frame" x="140" y="59" width="98" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="0.0" maxValue="600" translatesAutoresizingMaskIntoConstraints="NO" id="sv9-8w-6FV">
+                            <rect key="frame" x="24" y="137" width="260" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="changeFontSize:" destination="BV1-FR-VrT" eventType="valueChanged" id="tjY-r2-gHt"/>
+                            </connections>
+                        </slider>
+                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="E78-gg-0IM">
+                            <rect key="frame" x="24" y="227" width="260" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="changeDistance:" destination="BV1-FR-VrT" eventType="valueChanged" id="hA2-ZF-fg2"/>
+                            </connections>
+                        </slider>
+                        <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="13.5" minValue="0.5" maxValue="13.5" translatesAutoresizingMaskIntoConstraints="NO" id="YOR-cN-zZY">
+                            <rect key="frame" x="24" y="316" width="328" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <action selector="changeColor:" destination="BV1-FR-VrT" eventType="valueChanged" id="4v1-vx-0Dq"/>
+                            </connections>
+                        </slider>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIZE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ln-if-wuW">
+                            <rect key="frame" x="24" y="113" width="28" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DISTANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fca-LW-fBj">
+                            <rect key="frame" x="24" y="203" width="64" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60 pt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPq-gD-Gd9">
+                            <rect key="frame" x="304" y="141" width="72" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20 cm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgk-av-PB5">
+                            <rect key="frame" x="304" y="231" width="72" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COLOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7e-2m-Pkf">
+                            <rect key="frame" x="24" y="292" width="45" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TI8-TP-S1G">
+                            <rect key="frame" x="308" y="55" width="42" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="DONE"/>
+                            <connections>
+                                <action selector="dissmissPopUp:" destination="BV1-FR-VrT" eventType="touchUpInside" id="gPT-bl-veS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="7nF-WL-P47"/>
+                </view>
+            </objects>
+        </scene>
+    </scenes>
+</document>
